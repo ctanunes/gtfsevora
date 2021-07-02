@@ -1,0 +1,6 @@
+stop_id,stop_name,stop_lat,stop_lon,stop_code,stop_desc,zone_id,stop_url,location_type,parent_station,wheelchair_boarding,stop_direction,stop_timezone,vehicle_type,platform_code
+0,Granito,0.000000,0.000000,,,,,,,,,,,
+1,Louredo,0.000000,0.000000,,,,,,,,,,,
+2,Sr.Aflitos,0.000000,0.000000,,,,,,,,,,,
+3,"Esc.EB 2,3 Pites",0.000000,0.000000,,,,,,,,,,,
+4,Lg. Luís de Camões,0.000000,0.000000,,,,,,,,,,,

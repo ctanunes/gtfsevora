@@ -1,0 +1,11 @@
+agency_id,route_id,route_short_name,route_long_name,route_type,route_desc,route_url,route_color,route_text_color,route_bikes_allowed,bikes_allowed,route_sort_order
+TE,21,21,Louredo-Luís de Camões,0,,,,,,,
+TE,22,22,Canaviais-Parque Industrial (via Malagueira),0,,,,,,,
+TE,23,23,Garraia-Almeirim,0,,,,,,,
+TE,24,24,Canaviais-Parque Industrial (via centro histórico),0,,,,,,,
+TE,25,25,Canaviais-Luís de Camões,0,,,,,,,
+TE,31,31,25 de Abril-Malagueira,0,,,,,,,
+TE,32,32,25 de Abril-Malagueira,0,,,,,,,
+TE,33,33,Sra.Saúde-Fontanas,0,,,,,,,
+TE,34,34,Cruz Picada-Sra.Saúde,0,,,,,,,
+TE,41,41,Gabriel Pereira-Casinha,0,,,,,,,

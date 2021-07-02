@@ -1,0 +1,2 @@
+agency_id,agency_name,agency_url,agency_timezone,agency_lang,agency_phone,agency_fare_url
+TE,Transportes de Évora,http://www.trevo.com.pt/,Europe/Lisbon,pt,,
