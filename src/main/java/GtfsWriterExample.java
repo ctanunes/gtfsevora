@@ -3,6 +3,7 @@ import org.onebusaway.gtfs.serialization.GtfsWriter;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class GtfsWriterExample {
@@ -48,41 +49,17 @@ public class GtfsWriterExample {
 
     private void createStops(GtfsWriter writer) {
 
-        int id = 0;
+        List<String> stopNames = Arrays.asList("Granito", "Louredo", "Sr.Aflitos", "Esc.EB 2,3 Pites", "Lg. Luís de Camões");
 
-        Stop stop = new Stop();
-        AgencyAndId agencyAndId = new AgencyAndId("TE",""+ id++ +"");
-        stop.setId(agencyAndId);
-        stop.setName("Granito");
-        //0
+        for (int i = 0; i < stopNames.size(); i++) {
+            Stop stop = new Stop();
+            AgencyAndId agencyAndId = new AgencyAndId("TE",""+ i +"");
+            stop.setId(agencyAndId);
+            stop.setName(stopNames.get(i));
+            writer.handleEntity(stop);
+            listStops.add(stop);
+        }
 
-        listStops.add(stop);
-        writer.handleEntity(stop);
-
-        agencyAndId.setId(""+ id++ +"");
-        stop.setId(agencyAndId);
-        stop.setName("Louredo");
-        //1
-
-        writer.handleEntity(stop);
-
-        agencyAndId.setId(""+ id++ +"");
-        stop.setId(agencyAndId);
-        stop.setName("Sr.Aflitos");
-
-        writer.handleEntity(stop);
-
-        agencyAndId.setId(""+ id++ +"");
-        stop.setId(agencyAndId);
-        stop.setName("Esc.EB 2,3 Pites");
-
-        writer.handleEntity(stop);
-
-        agencyAndId.setId(""+ id++ +"");
-        stop.setId(agencyAndId);
-        stop.setName("Lg. Luís de Camões");
-
-        writer.handleEntity(stop);
     }
 
     private void createRoutes(GtfsWriter writer, Agency agency) {
@@ -109,9 +86,36 @@ public class GtfsWriterExample {
         StopTime stopTime = new StopTime();
         stopTime.setTrip(trip);
         stopTime.setStop(listStops.get(0));
-        stopTime.setArrivalTime(000620);
-        stopTime.setDepartureTime(000620);
+        stopTime.setArrivalTime(000720);
+        stopTime.setDepartureTime(000720);
+
         writer.handleEntity(stopTime);
+        stopTime.setStop(listStops.get(1));
+        stopTime.setArrivalTime(000726);
+        stopTime.setDepartureTime(000726);
+
+        writer.handleEntity(stopTime);
+        stopTime.setStop(listStops.get(2));
+        stopTime.setArrivalTime(000732);
+        stopTime.setDepartureTime(000732);
+
+        writer.handleEntity(stopTime);
+        stopTime.setStop(listStops.get(0));
+        stopTime.setArrivalTime(000740);
+        stopTime.setDepartureTime(000740);
+
+        writer.handleEntity(stopTime);
+        stopTime.setStop(listStops.get(3));
+        stopTime.setArrivalTime(000747);
+        stopTime.setDepartureTime(000747);
+
+        writer.handleEntity(stopTime);
+        stopTime.setStop(listStops.get(4));
+        stopTime.setArrivalTime(000754);
+        stopTime.setDepartureTime(000754);
+
+        writer.handleEntity(stopTime);
+
 
         String id = "22";
         agencyAndId.setId(id);
